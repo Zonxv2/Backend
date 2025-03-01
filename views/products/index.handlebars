@@ -1,0 +1,25 @@
+<h1>Lista de Productos</h1>
+<ul>
+  {{#each payload}}
+    <li>
+      {{nombre}}
+      - ${{precio}}
+      -
+      {{categoria}}
+      <a href="/products/{{_id}}">Ver detalles</a>
+      <button>Agregar al carrito</button>
+    </li>
+  {{/each}}
+</ul>
+
+<div>
+  {{#if hasPrevPage}}
+    <a href="{{prevLink}}">Anterior</a>
+  {{/if}}
+
+  <span>Página {{page}} de {{totalPages}}</span>
+
+  {{#if hasNextPage}}
+    <a href="{{nextLink}}">Siguiente</a>
+  {{/if}}
+</div>

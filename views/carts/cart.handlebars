@@ -1,0 +1,11 @@
+<h1>Carrito</h1>
+<ul>
+  {{#each payload.productos}}
+    <li>
+      {{producto.nombre}}
+      - Cantidad:
+      {{cantidad}}
+    </li>
+  {{/each}}
+</ul>
+<a href="/products">Volver a la lista de productos</a>

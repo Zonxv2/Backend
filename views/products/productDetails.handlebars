@@ -1,0 +1,8 @@
+<h1>{{payload.nombre}}</h1>
+<p>{{payload.descripcion}}</p>
+<p>Precio: ${{payload.precio}}</p>
+<p>Categoría: {{payload.categoria}}</p>
+<p>Disponibilidad:
+  {{#if payload.disponibilidad}}Disponible{{else}}No disponible{{/if}}</p>
+<button>Agregar al carrito</button>
+<a href="/products">Volver a la lista</a>
